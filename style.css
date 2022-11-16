@@ -1,45 +1,13 @@
-body{
-  width:1200px;
-  font-size: 0;
-}
-div{
-  position: relative;
-}
-/*
-Add your CSS to the ID selectors below
-*/
-#statue{
-
+#fallacies{
+  margin-left:20px;
 }
 
-#ball{
-
+h3{
+  text-decoration:underline;
 }
 
-#turnip{
-
-}
-
-#farm{
-
-}
-
-#grass{
-
-}
-
-#tetris{
-
-}
-
-#L{
-
-}
-
-#T{
-
-}
-
-#I{
-
+p{
+  border-radius:15px;
+  background-color:#EEE;
+  padding: 15px;
 }
