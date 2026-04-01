@@ -67,7 +67,7 @@ body {
 .hero p {
   font-family: "Dancing Script", cursive;
   color: var(--muted);
-  font-size: 20px;
+  font-size: 1.3rem;
   margin-bottom: 2rem;
 }
 
