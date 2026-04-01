@@ -59,13 +59,14 @@ body {
 }
 
 .hero h1 {
+  font-family: "Dancing Script", cursive;
   font-size: 3rem;
   margin-bottom: 0.5rem;
 }
 
 .hero p {
   color: var(--muted);
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 2rem;
 }
 
