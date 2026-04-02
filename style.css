@@ -10,6 +10,14 @@ html {
 }
 
 
+section h1 {
+  text-align: center;
+}
+
+section h2 {
+  text-align: center;
+}
+
 section {
   scroll-margin-top: 90px;
 }
