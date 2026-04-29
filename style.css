@@ -73,3 +73,14 @@ h1 {
   text-align: center;
   opacity: 0.6;
 }
+
+.profile {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1.25rem;
+  filter: grayscale(100%);
+  opacity: 0.9;
+}
+``
