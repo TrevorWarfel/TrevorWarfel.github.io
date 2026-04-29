@@ -1,132 +1,75 @@
-:root {
-  --bg: pink;         /* Set your main background color */
-  --text: #1f2933;
-  --muted: #6b7280;
-  --accent: #3b82f6;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  margin: 0;
-  font-family: "Libre Baskerville", serif;
-  color: var(--text);
-  background: var(--bg);   /* Uses the new pink background variable */
-  line-height: 1.6;
-}
-
 * {
   box-sizing: border-box;
 }
 
-/* ---------------- NAV ---------------- */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
 
-nav {
+body {
+  background: #111;
+  color: #f2f2f2;
+  font-family: "Georgia", "Times New Roman", serif;
+}
+
+/* REAL centering */
+main {
+  min-height: 100vh;
+  max-width: 720px;
+  margin: 0 auto;
+
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  gap: 2rem;
-  padding: 1.5rem;
-  background: white;
-  position: fixed;
-  top: 0;
-  width: 100%;
+
+  padding: 3rem 1.5rem;
 }
 
-nav a {
-  font-weight: 600;
-  color: var(--text);
-  text-decoration: none;
-}
-
-nav a:hover {
-  color: var(--accent);
-}
-
-/* ---------------- HERO ---------------- */
-
-.hero {
-  padding: 5rem 1.5rem;
+.intro {
   text-align: center;
-  background: linear-gradient(135deg, #ffe6f2, #ffd0e8);
-}
-
-.hero h1 {
-  font-family: "Dancing Script", cursive;
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
-}
-
-.hero p {
-  font-family: "Dancing Script", cursive;
-  color: var(--muted);
-  font-size: 1.3rem;
   margin-bottom: 2rem;
 }
 
-/* ---------------- LAYOUT ---------------- */
+h1 {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.25rem;
+}
 
-.container {
-  max-width: 650px;
-  margin: 0 auto;
+.tagline {
+  font-size: 1rem;
+  opacity: 0.7;
+}
+
+.statement {
   text-align: center;
-  padding: 2rem 1rem;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
 }
 
-section {
-  scroll-margin-top: 90px; /* fixes the anchor scroll jump */
-  margin-bottom: 4rem;
-}
-
-h2 {
-  font-family: "Dancing Script", cursive;
-  font-size: 1.75rem;
-  margin-bottom: 1rem;
-}
-
-/* ---------------- COMPONENTS ---------------- */
-
-.profile-pic {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 1.5rem;
-  border: 3px solid white;
-}
-
-.card {
-  padding: 1.5rem;
-  border-radius: 12px;
-  background: #fff0f6;
-  margin-bottom: 1.5rem;
-}
-
-.card h3 {
-  margin-top: 0;
-}
-
-a {
-  color: var(--accent);
-  text-decoration: none;
-}
-
-/* ---------------- FOOTER ---------------- */
-
-footer {
-  font-family: "Dancing Script", cursive;
-  text-align: center;
-  padding: 2rem;
-  color: var(--muted);
-  font-size: 0.9rem;
-}
-
-
-#contact {
+.documents {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
 }
 
+.documents a {
+  text-decoration: none;
+  color: #f2f2f2;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  padding-bottom: 2px;
+}
+
+.documents a:hover {
+  border-bottom-color: #fff;
+}
+
+.footer {
+  text-align: center;
+  opacity: 0.6;
+}
